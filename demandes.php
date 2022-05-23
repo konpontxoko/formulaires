@@ -33,6 +33,6 @@ ELEMENT;
   }
 ?>
 </div>
-<formulaire-menu/>
+<formulaireMenu/>
 </body>
 </html>

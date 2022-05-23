@@ -1,4 +1,4 @@
-class PrilibreriMenu extends HTMLElement {
+class formulaireMenu extends HTMLElement {
   constructor() {
     super();
 
