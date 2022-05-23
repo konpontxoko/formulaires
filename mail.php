@@ -1,10 +1,12 @@
  <?php
     $titre = $_POST['titre'];
-    $descriptif = $_POST['descriptif'];
+ $descriptif = $_POST['descriptif'];
+ $dest = $_POST['dest'];
+
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
     $from = "baiorepar@framalistes.org";
-    $to = "baiorepar@framalistes.org";
+    $to = "$dest";
     $subject = "$titre";
     $message = "$descriptif";
     $headers = "De :" . $from;
