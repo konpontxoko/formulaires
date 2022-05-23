@@ -23,7 +23,6 @@ class FormulaireMenu extends HTMLElement {
   }
   connectedCallback() {
     const wrapper = this.wrapper;
-
     const link = document.createElement('a');
     link.classList.add('Menu-link');
     link.setAttribute('href', './admin.php');
