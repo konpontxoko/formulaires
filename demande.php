@@ -13,7 +13,7 @@
 </div>
 
 	<input type="submit" value="envoyer la demande à : ">
-	<input type="text" name="dest" class="form"  value="baiorepar@framalistes.org" onkeyup="showHint(this.value)"/>
+	<input type="button" name="dest" class="form"  value="baiorepar@framalistes.org" onkeyup="showHint(this.value)"/>
 </form>
 
 <br>
