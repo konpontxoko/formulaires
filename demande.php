@@ -53,9 +53,8 @@ function testMail(dest) {
   xhttp.open("GET", "mail.php");
   xhttp.send();
 }
-
-
 </script>
 
+<formulaire-menu/>
 </html> 
 
