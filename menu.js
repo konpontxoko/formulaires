@@ -1,4 +1,4 @@
-class formulaireMenu extends HTMLElement {
+class FormulaireMenu extends HTMLElement {
   constructor() {
     super();
 
@@ -32,4 +32,4 @@ class formulaireMenu extends HTMLElement {
   }
 }
 
-customElements.define('formulaire-menu', PrilibreriMenu);
+customElements.define('formulaire-menu', FormulaireMenu);
