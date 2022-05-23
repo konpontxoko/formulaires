@@ -1,5 +1,17 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<head>
+  <script src="./article-list-item.js"></script>
+  <script src="./menu.js"></script>
+  <style type="text/css">
+    body {
+      padding: 50px 10px;
+    }
+  </style>
+  <link href="./article-list.css" rel="stylesheet">
+</head>
+
+
 <body>
 <H1>BAIOREPAR</H1>
 <BR>
@@ -7,5 +19,6 @@ i<!DOCTYPE html>
 <BR>
 <button onclick="window.location.href='demandes.php'">Voir les demandes</button>
 
+<formulaire-menu/>
 </html> 
 

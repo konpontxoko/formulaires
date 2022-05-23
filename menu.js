@@ -32,4 +32,4 @@ class formulaireMenu extends HTMLElement {
   }
 }
 
-customElements.define('prilibreri-menu', PrilibreriMenu);
+customElements.define('formulaire-menu', PrilibreriMenu);
