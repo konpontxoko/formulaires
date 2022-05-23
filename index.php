@@ -17,7 +17,7 @@
 <BR>
 <button onclick="window.location.href='demande.php'">Demander une réparation</button>
 <BR>
-<button onclick="window.location.href='demandes.php'">Voir les demandes</button>
+<button onclick="window.location.href='listedemandes.php'">Voir les demandes</button>
 
 <formulaire-menu/>
 </html> 
