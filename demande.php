@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+  <script src="./article-list-item.js"></script>
+  <script src="./menu.js"></script>
+  <style type="text/css">
+    body {
+      padding: 50px 10px;
+    }
+  </style>
+  <link href="./article-list.css" rel="stylesheet">
+</head>
+
 
 <form method="POST" action="mail.php">
   <h2>Titre de la demande de réparation</h2>
@@ -13,7 +24,6 @@
 </div>
 
 	<input type="submit" value="envoyer la demande à : ">
-	<input type="button"  class="form"  value="baiorepar@framalistes.org" onkeyup="showHint(this.value)"/>
 	<input type="text" style="hidden" name="dest" class="form"  value="baiorepar@framalistes.org" onkeyup="showHint(this.value)"/>
 </form>
 
