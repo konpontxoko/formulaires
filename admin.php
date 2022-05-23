@@ -1,5 +1,15 @@
 <html>
   <head>
+  <script src="./article-list-item.js"></script>
+  <script src="./menu.js"></script>
+  <style type="text/css">
+    body {
+      padding: 50px 10px;
+    }
+  </style>
+  <link href="./article-list.css" rel="stylesheet">
+
+
   <style>
     .Admin {
       background: #ddd;
@@ -49,4 +59,6 @@
     <a class="Admin-archives" href="./archives">Archives</a>
     <a class="Admin-database" href="./samples/events.json">Voir le contenu de la base de données</a>
   </body>
+
+<formulaire-menu/>
 </html>
