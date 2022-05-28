@@ -1,6 +1,20 @@
-# Site experimental
+# Site 
 
 ## Principe de fonctionnement
+
+Normalement les sites se mettent automatiquement à jour toutes les 30 minutes
+
+### Branch main
+
+La branche main est visible sur les domaines suivants :
+   * boutikdev.konpontxoko.org 
+   * baiorepar.pizzacoca.fr
+
+### Branches de dev
+   * alexandre.baiorepar.pizzacoca.fr > suit la branche alex
+   * flo.baiorepar.pizzacoca.fr > suit la branche flo
+   * yacou.baiorepar.pizzacoca.fr > suit la branche yacou
+
 
 ## Usages de participation devs
 
