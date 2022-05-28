@@ -16,7 +16,7 @@
 </head>
  
   <body class="Admin">
-    <a class="Admin-new" href="/repar/baiorepar.php">BAIOREPAR</a>
+    <a class="Admin-new" href="/baiorepar/baiorepar.php">BAIOREPAR</a>
     <a class="Admin-pending" href="/boutik/admin.php">BOUTIK</a>
   </body>
 
