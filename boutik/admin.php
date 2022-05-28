@@ -1,13 +1,13 @@
 <html>
   <head>
-  <script src="../boutik/article-list-item.js"></script>
-  <script src="../ux/menu.js"></script>
+  <script src="/boutik/article-list-item.js"></script>
+  <script src="/js/menu.js"></script>
   <style type="text/css">
     body {
       padding: 50px 10px;
     }
   </style>
-  <link href="../css/article-list.css" rel="stylesheet">
+  <link href="/css/article-list.css" rel="stylesheet">
 
 
   <style>
@@ -54,10 +54,10 @@
   </script>
   </head>
   <body class="Admin">
-    <a class="Admin-new" href="./new.html">Nouvel article</a>
-    <a class="Admin-pending" href="./pending">Articles en attente</a>
-    <a class="Admin-archives" href="./archives">Archives</a>
-    <a class="Admin-database" href="./samples/events.json">Voir le contenu de la base de données</a>
+    <a class="Admin-new" href="/boutik/new.html">Nouvel article</a>
+    <a class="Admin-pending" href="/boutik/pending">Articles en attente</a>
+    <a class="Admin-archives" href="/boutik/archives">Archives</a>
+    <a class="Admin-database" href="/boutik/samples/events.json">Voir le contenu de la base de données</a>
   </body>
 
 <formulaire-menu/>

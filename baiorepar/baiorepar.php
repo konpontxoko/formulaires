@@ -10,16 +10,16 @@
   </style>
   <link href="/css/article-list.css" rel="stylesheet">
   <link href="/css/admin.css" rel="stylesheet">
-  <script type="text/javascript">
-  </script>
- 
 </head>
- 
-  <body class="Admin">
-    <a class="Admin-new" href="/repar/baiorepar.php">BAIOREPAR</a>
-    <a class="Admin-pending" href="/boutik/admin.php">BOUTIK</a>
-  </body>
 
+
+<body>
+<H1>SITE EXPERIMENTAL</H1>
+<H2>BAIOREPAR</H2>
+<H2>BAIOREPAR</H2>
+<button onclick="window.location.href='/baiorepar/demande.php'">Demander une réparation</button>
+<BR>
+<button onclick="window.location.href='baiorepar/listedemandes.php'">Voir les demandes</button>
 
 <formulaire-menu/>
 </html> 

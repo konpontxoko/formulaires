@@ -2,18 +2,18 @@
 <html>
 <body>
 <head>
-  <script src="./article-list-item.js"></script>
-  <script src="./menu.js"></script>
+  <script src="/js/article-list-item.js"></script>
+  <script src="/js/menu.js"></script>
   <style type="text/css">
     body {
       padding: 50px 10px;
     }
   </style>
-  <link href="./css/article-list.css" rel="stylesheet">
+  <link href="/css/article-list.css" rel="stylesheet">
 </head>
 
 
-<form method="POST" action="mail.php">
+<form method="POST" action="/phpServer/mail.php">
   <h2>Titre de la demande de réparation</h2>
 <div id="titre">
 	<input type="text" name="titre" class="form"  value="Je veux réparer un truc" onkeyup="showHint(this.value)"/>
@@ -40,7 +40,7 @@ function reset() {
     document.getElementById("titre").innerHTML =
     this.responseText;
   }
-  xhttp.open("GET", "static/titreReparation");
+  xhttp.open("GET", "/static/titreReparation");
   xhttp.send();
 
 }
@@ -50,7 +50,7 @@ function testMail(dest) {
     document.getElementById("demo").innerHTML =
     this.responseText;
   }
-  xhttp.open("GET", "mail.php");
+  xhttp.open("GET", "/phpServer/mail.php");
   xhttp.send();
 }
 </script>

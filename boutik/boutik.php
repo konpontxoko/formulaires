@@ -9,17 +9,12 @@
     }
   </style>
   <link href="/css/article-list.css" rel="stylesheet">
-  <link href="/css/admin.css" rel="stylesheet">
-  <script type="text/javascript">
-  </script>
- 
 </head>
- 
-  <body class="Admin">
-    <a class="Admin-new" href="/repar/baiorepar.php">BAIOREPAR</a>
-    <a class="Admin-pending" href="/boutik/admin.php">BOUTIK</a>
-  </body>
 
+
+<body>
+<H1>BOUTIK</H1>
+<BR>
 
 <formulaire-menu/>
 </html> 

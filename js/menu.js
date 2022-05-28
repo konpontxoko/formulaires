@@ -25,8 +25,8 @@ class FormulaireMenu extends HTMLElement {
     const wrapper = this.wrapper;
     const link = document.createElement('a');
     link.classList.add('Menu-link');
-    link.setAttribute('href', './admin.php');
-    link.textContent = 'Administration';
+    link.setAttribute('href', '/boutik/admin.php');
+    link.textContent = 'ADMIN BOUTIK';
     wrapper.appendChild(link);
   }
 }
