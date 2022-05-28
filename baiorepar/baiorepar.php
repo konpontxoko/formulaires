@@ -14,9 +14,7 @@
 
 
 <body>
-<H1>SITE EXPERIMENTAL</H1>
-<H2>BAIOREPAR</H2>
-<H2>BAIOREPAR</H2>
+<H1>BAIOREPAR</H1>
 <button onclick="window.location.href='/baiorepar/demande.php'">Demander une réparation</button>
 <BR>
 <button onclick="window.location.href='baiorepar/listedemandes.php'">Voir les demandes</button>
