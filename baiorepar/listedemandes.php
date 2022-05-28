@@ -1,13 +1,13 @@
 <html>
 <head>
-  <script src="./article-list-item.js"></script>
-  <script src="./menu.js"></script>
+  <script src="../boutik//article-list-item.js"></script>
+  <script src="../ux/menu.js"></script>
   <style type="text/css">
     body {
       padding: 50px 10px;
     }
   </style>
-  <link href="./article-list.css" rel="stylesheet">
+  <link href="../boutik/article-list.css" rel="stylesheet">
 </head>
 <body>
 <h1>Liste des demandes de réparation</h1>
@@ -23,7 +23,7 @@
   }
   foreach($articles as $id => $article) {
     echo <<<ELEMENT
-    <a class="ArticleList-item" href="./detail.php?id=$id">
+    <a class="ArticleList-item" href="../boutik/detail.php?id=$id">
       <ktrc-article-list-item 
         title="$article->title"
         photo="$article->photo"
