@@ -9,7 +9,6 @@
   </style>
   <link href="./css/article-list.css" rel="stylesheet">
 
-
   <style>
     .Admin {
       background: #ddd;
@@ -54,9 +53,9 @@
   </script>
   </head>
   <body class="Admin">
-    <a class="Admin-new" href="./new.html">Nouvel article</a>
-    <a class="Admin-pending" href="./pending.html">Articles en attente</a>
-    <a class="Admin-archives" href="./archives.html">Archives</a>
+    <a class="Admin-new" href="./boutik/new.html">Nouvel article</a>
+    <a class="Admin-pending" href="./boutik/pending.html">Articles en attente</a>
+    <a class="Admin-archives" href="./boutik/archives.html">Archives</a>
     <a class="Admin-database" href="./samples/events.json">Voir le contenu de la base de données</a>
   </body>
 
