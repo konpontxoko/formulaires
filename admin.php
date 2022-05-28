@@ -54,9 +54,9 @@
   </script>
   </head>
   <body class="Admin">
-    <a class="Admin-new" href="./new">Nouvel article</a>
-    <a class="Admin-pending" href="./pending">Articles en attente</a>
-    <a class="Admin-archives" href="./archives">Archives</a>
+    <a class="Admin-new" href="./new.html">Nouvel article</a>
+    <a class="Admin-pending" href="./pending.html">Articles en attente</a>
+    <a class="Admin-archives" href="./archives.html">Archives</a>
     <a class="Admin-database" href="./samples/events.json">Voir le contenu de la base de données</a>
   </body>
 
