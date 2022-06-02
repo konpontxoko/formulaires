@@ -13,7 +13,7 @@
 </head>
 
 
-<form method="POST" action="/phpServer/mail.php">
+<form method="POST" action="/php/mail.php">
   <h2>Titre de la demande de réparation</h2>
 <div id="titre">
 	<input type="text" name="titre" class="form"  value="Je veux réparer un truc" onkeyup="showHint(this.value)"/>
@@ -50,7 +50,7 @@ function testMail(dest) {
     document.getElementById("demo").innerHTML =
     this.responseText;
   }
-  xhttp.open("GET", "/phpServer/mail.php");
+  xhttp.open("GET", "/php/mail.php");
   xhttp.send();
 }
 </script>
