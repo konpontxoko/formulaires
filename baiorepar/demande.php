@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="/js/article-list-item.js"></script>
-  <script src="/js/menu.js"></script>
-  <style type="text/css">
-    body {
-      padding: 50px 10px;
-    }
-  </style>
-  <link href="/css/article-list.css" rel="stylesheet">
-  <link href="/css/admin.css" rel="stylesheet">
-</head>
+<?php require_once("../head.php"); ?>
 
-<body>
 
   <H2>Test 1 : Formulaire</H2>
   <form method="POST" action="/baiorepar/mail.php">
@@ -114,5 +101,5 @@ use PHPMailer\PHPMailer\Exception;
       xhttp.send();
     }
   </script>
-</html> 
 
+<?php require_once("../tail.php"); ?>
