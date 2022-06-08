@@ -1,9 +1,13 @@
 -- injection de la table
-DROP SCHEMA db_site;
+DROP SCHEMA db_site  ;
+--SET search_path TO db_site, public;
 
 -- creation table demandeurs
 CREATE SCHEMA db_site;
 -- SET search_path TO db_site, public;
+
+-- DROP TABLE db_sites.demandeurs;
+-- DROP TABLE db_sites.demandes;
 
 -- entités
 CREATE TABLE db_site.demandeurs (
@@ -23,12 +27,11 @@ CREATE TABLE db_site.demandes (
   num_demande serial NOT NULL,
   intitule text NOT NULL,
   message text NOT NULL,
-  mail text NOT NULL,  
+  email text ,
   photo BLOB,
   --  clef
-  PRIMARY KEY (num_demande),
-  UNIQUE (email, intitule),
-  FOREIGN KEY (email) REFERENCES db_site.email(email)
+  PRIMARY KEY (num_demande)
+--  FOREIGN KEY (email) REFERENCES demandeurs(email)
 );
 
 

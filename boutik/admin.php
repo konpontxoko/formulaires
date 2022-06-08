@@ -1,5 +1,8 @@
 <?php 
 require_once("../head.php");
+?>
+<h2>Boutikr</h2>
+<?php 
 require_once("./menuboutik.php");
 ?>
 

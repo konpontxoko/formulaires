@@ -1,5 +1,4 @@
 <!-- <h2 class"page-header">Accueil</h2> -->
-<br />
 <ul class="nav nav-tabs">
 
 <?php

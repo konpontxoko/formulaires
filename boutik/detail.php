@@ -1,6 +1,9 @@
 <?php 
 require_once("../head.php");
-require_once("./menubaiorepar.php");
+?>
+<h2>Boutik</h2>
+<?php 
+require_once("./menuboutik.php");
 ?>
 
 

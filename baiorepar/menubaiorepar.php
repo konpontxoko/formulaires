@@ -11,7 +11,7 @@ function doprint($page, $self, $title) {
 	      print("<li><a href=\"$page\" title=\"$title\">$title</a></li>");
 }
 
-doprint('/baiorepar/demande.php', $self, "Demander une réparation");
+doprint('/php/demande.php', $self, "Demander une réparation");
 doprint('/baiorepar/listedemandeurs.php', $self, "Demandeurs");
 doprint('/baiorepar/listedemandes.php', $self, "Demandes");
 doprint('/baiorepar/infos.php', $self, "Infos PHP");
