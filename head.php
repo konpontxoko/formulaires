@@ -9,6 +9,9 @@
     <link rel=stylesheet type=text/css href="/css/article-list.css">
     <link rel=stylesheet type=text/css href="/css/admin.css">
 
+    <!-- pour le formulaire d'inscription -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
     <script src="/js/article-list-item.js"></script>
     <script src="/js/menu.js"></script>
   </head>

@@ -1,8 +1,10 @@
 <?php 
 require_once("../head.php");
+?>
+<h2>Demandes de réparation</h2>
+<?php 
 require_once("./menubaiorepar.php");
 ?>
-<h3>Liste des demandes de réparation</h3>
 <div class="ArticleList">
 
 <?php
