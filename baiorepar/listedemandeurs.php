@@ -4,7 +4,7 @@ require_once("../head.php");
 <h2>Liste des demandeurs</h2>
 <?php 
 require_once("./menubaiorepar.php");
-require_once("./dbconfig.php");
+require_once("../db/db.php");
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
@@ -51,5 +51,7 @@ $sql = 'SELECT nom, email, mobile
                 </tbody>
 	    </table>
 
+
+<?php mysqli_close($conn); ?>
 
 <?php require_once("../tail.php"); ?>

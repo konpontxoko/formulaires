@@ -1,10 +1,18 @@
 <?php 
 require_once("../head.php"); 
-require_once("../baiorepar/menubaiorepar.php");
-require_once("../sql/db.php"); 
 ?>
+<h2>Inscription</h2>
 <?php
-{    
+require_once("../baiorepar/menubaiorepar.php");
+require_once("../db/db.php"); 
+
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    echo "Connected to $dbname at $host successfully.<BR>";
+} catch (PDOException $pe) {
+    die("Could not connect to the database $dbname :<BR>" . $pe->getMessage());
+}
+
      $nom = $_POST['nom'];
      $prenom = $_POST['prenom'];
      $email = $_POST['email'];
@@ -45,20 +53,46 @@ if (strlen($_POST['pass']) > 20 || strlen($_POST['pass']) < 5) {
 	exit('Votre mot de passe doit etre composé de 5 à 20 caractères.');
 }
 
-// vérificaiton du champ mail
+// vérification du champ mail
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 	exit('Email non valide !');
 }
 
-     $sql = "INSERT INTO demandeurs (nom,prenom,email,mobile,mdp)
-     VALUES ('$nom','$prenom','$email','$mobile','$pass')";
-     if (mysqli_query($conn, $sql)) {
-        echo "Enregistrement réalisé !";
-     } else {
-        echo "Error: " . $sql . ":-" . mysqli_error($conn);
-     }
-     mysqli_close($conn);
+#try {
+#    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+#    echo "Connected to $dbname at $host successfully.<BR>";
+#
+#try {
+#    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+
+try {
+    $pdi = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+
+
+
+    $sql = "INSERT INTO demandeurs 
+	    (nom,prenom,email,mobile,mdp)
+	    VALUES ('$nom','$prenom','$email','$mobile','$pass')";
+
+    $q = $pdi->query($sql);
+    $q->setFetchMode(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("Could not connect to the database $dbname :" . $e->getMessage());
 }
+#
+#     if (mysqli_query($conn, $sql)) {
+#        echo "Enregistrement réalisé !";
+#        print "Enregistrement réalisé !";
+#     }
+#    } catch (PDOException $pe) {
+#    die("Could not connect to the database $dbname :<BR>" . $pe->getMessage());
+#}
+
+#
+#     else {
+#        echo "Error: " . $sql . ":-" . mysqli_error($conn);
+#     }
 ?>
+<?php mysqli_close($conn); ?>
 
 <?php require_once("../tail.php"); ?>

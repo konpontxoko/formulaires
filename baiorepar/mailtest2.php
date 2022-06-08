@@ -46,7 +46,7 @@ use PHPMailer\PHPMailer\Exception;
     $mail->Host = 'smtp.mail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'baiorepar@mail.com'; 
-    $mail->Password = 'T02GqkYCpg82ixY' ;
+    $mail->Password = '' ;
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
     

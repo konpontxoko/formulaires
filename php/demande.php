@@ -56,11 +56,11 @@ require_once("./menubaiorepar.php");
   </form>
   
 <HR>
-<H3><a href="/php/mailtest2.php">Test 2 : PHPMailer</a></H3>
+<H3><a href="/baiorepar/mailtest2.php">Test 2 : PHPMailer</a></H3>
 <HR>
-<H3><a href="/php/mailtest3.php">Test 3 : PHPMailer</a></H3>
+<H3><a href="/baiorepar/mailtest3.php">Test 3 : PHPMailer</a></H3>
 <HR>
-<H3><a href="/php/mailtest4.php">Test 4 : PHPMailer</a></H3>
+<H3><a href="/baiorepar/mailtest4.php">Test 4 : PHPMailer</a></H3>
 <HR>
 
 

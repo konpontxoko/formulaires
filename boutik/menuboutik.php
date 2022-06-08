@@ -1,5 +1,3 @@
-<h2 class"page-header">Boutik</h2>
-<br />
 <ul class="nav nav-tabs">
 <?php
 $self = $_SERVER['PHP_SELF'];
