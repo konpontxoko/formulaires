@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="/js/article-list-item.js"></script>
-  <script src="/js/menu.js"></script>
-  <style type="text/css">
-    body {
-      padding: 50px 10px;
-    }
-  </style>
-  <link href="/css/article-list.css" rel="stylesheet">
-</head>
+<?php 
+require_once("../head.php");
+require_once("./menuboutik.php");
+print("<p>Bienvenue dans la Boutik !</p>");
+?>
 
 
-<body>
-<H1>BOUTIK</H1>
-<BR>
-
-<formulaire-menu/>
-</html> 
-
+<?php
+require_once("../tail.php");
+?>

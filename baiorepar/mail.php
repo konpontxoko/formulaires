@@ -1,4 +1,9 @@
- <?php
+
+<?php 
+require_once("../head.php"); 
+require_once("./menubaiorepar.php");
+?>
+<?php
     $titre = $_POST['titre'];
  $descriptif = $_POST['descriptif'];
  $dest = $_POST['dest'];

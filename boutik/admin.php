@@ -1,3 +1,10 @@
+<?php 
+require_once("../head.php");
+require_once("./menuboutik.php");
+?>
+
+
+
 <html>
   <head>
   <script src="/boutik/article-list-item.js"></script>
@@ -62,3 +69,8 @@
 
 <formulaire-menu/>
 </html>
+
+<?php
+require_once("../tail.php");
+?>
+
