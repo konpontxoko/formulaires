@@ -1,6 +1,7 @@
-<h2 class"page-header">Accueil</h2>
+<!-- <h2 class"page-header">Accueil</h2> -->
 <br />
 <ul class="nav nav-tabs">
+
 <?php
 $self = $_SERVER['PHP_SELF'];
 
@@ -11,7 +12,8 @@ function doprint($page, $self, $title) {
 	      print("<li><a href=\"$page\" title=\"$title\">$title</a></li>");
 }
 
-doprint('/index.php', $self, "Login");
+doprint('/php/connexion.php', $self, "Connexion");
+doprint('/php/inscription.php', $self, "Inscription");
 ?>
 
 </ul>
