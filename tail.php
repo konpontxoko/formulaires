@@ -1,7 +1,7 @@
 <br/>
 <br/>
 <br/>
-<br/>
+<HR>
       <footer class="footer pull-down">
       	<p class="pull-right">Designed using the awesome <a
           href="http://twitter.github.com/bootstrap/">Good Old Twitter's bootstrap</a>.</p>
