@@ -31,10 +31,13 @@ require_once("../menu.php");
                              <label for="pass"><i class="fas fa-lock"></i>  Mot de passe</label>
                             <input type="password" name="pass" class="form-control" value="eeeeeee" required>
                         </div>
-                        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+                        <input type="submit" class="btn btn-primary" name="submit" value="S'inscrire">
                     </form>
                 </div>
             </div>        
         </div>
     </div>
-
+.
+<?php
+require_once("../tail.php");
+?>

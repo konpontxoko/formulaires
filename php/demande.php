@@ -38,9 +38,10 @@ require_once("../baiorepar/menubaiorepar.php");
 					<option>Ailleurs 2</option>
 				</select>
                         </div>
-                        <div>
-                            <label for="email"><i class="fas fa-envelope"></i>  Une photo ?</label>
-                            <input type="text" name="descriptif" class="form-control" required>
+			<div>
+                        	<label for="email"><i class="fas fa-envelope"></i>  Une photo ?</label>
+				<input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+				<input type="file" name="photo" />
                         </div>
                         <div class="form-group">
                         <input type="submit" class="btn btn-primary" name="poster" value="Poster la demande">
