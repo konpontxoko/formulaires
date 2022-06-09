@@ -29,9 +29,7 @@ require_once("../menu.php");
                 </div>
             </div>        
         </div>
-
-
 <?php
-require_once("./tail.php");
+require_once("../tail.php");
 ?>
 
