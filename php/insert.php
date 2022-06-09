@@ -65,19 +65,70 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 #try {
 #    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
+#$pdi = new PDO("mysql:host=localhost;dbname=database;","root","");
+#$b=$pdi->prepare("UPDATE `users` SET user='$var'");
+#$b->execute();
+
+#try {
+#    $pdi = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+
+#$stmt = $pdi->prepare("INSERT INTO demandeurs 
+#	    (nom,prenom,email,mobile,mdp)
+#	    VALUES (:nom, :prenom, :email, :mobile, :pass)";
+#$stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
+#$stmt->bindParam(':prenom', $prenom, PDO::PARAM_STR);
+#$stmt->bindParam(':email', $email, PDO::PARAM_STR);
+#$stmt->bindParam(':mobile', $mobile, PDO::PARAM_INT);
+#$stmt->bindParam(':pass', $pass, PDO::PARAM_STR);
+#$stmt->execute();
+#
+#    $q = $pdi->query($stmt);
+#    $q->setFetchMode(PDO::FETCH_ASSOC);
+#
+
+#################################### 
+# En attendant de mettre ne place une vraie solution
+function mysql_escape_mimic($inp) {
+    if(is_array($inp))
+        return array_map(__METHOD__, $inp);
+
+    if(!empty($inp) && is_string($inp)) {
+        return str_replace(array('\\', "\0", "\n", "\r", "'", '"', "\x1a"), array('\\\\', '\\0', '\\n', '\\r', "\\'", '\\"', '\\Z'), $inp);
+    }
+
+    return $inp;
+} 
+
+$s_nom = mysql_escape_mimic( $nom );
+$s_prenom = mysql_escape_mimic( $prenom );
+$s_email = mysql_escape_mimic( $email );
+$s_pass = mysql_escape_mimic( $pass );
+
+#$s_nom = mysqli_real_escape_string( $nom, $pdi );
+#$s_nom = mysql_real_escape_string( $nom );
+#################################### 
+
 try {
+
+
     $pdi = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-
-
     $sql = "INSERT INTO demandeurs 
 	    (nom,prenom,email,mobile,mdp)
-	    VALUES ('$nom','$prenom','$email','$mobile','$pass')";
+	    VALUES ('$s_nom','$s_prenom','$s_email','$mobile','$s_pass')";
+    $stmt = $pdi->prepare( $sql );
+    $stmt->execute(array("\xbf\x27 OR 1=1 /*"));
 
-    $q = $pdi->query($sql);
-    $q->setFetchMode(PDO::FETCH_ASSOC);
+
+#    $pdi = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+#
+#    $sql = "INSERT INTO demandeurs 
+#	    (nom,prenom,email,mobile,mdp)
+#	    VALUES ('$s_nom','$s_prenom','$s_email','$mobile','$s_pass')";
+#    
+#    $q = $pdi->query($sql);
+#    $q->setFetchMode(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    die("Could not connect to the database $dbname :" . $e->getMessage());
+    die("Impossible de se connecter à la base de données $dbname :" . $e->getMessage());
 }
 #
 #     if (mysqli_query($conn, $sql)) {
