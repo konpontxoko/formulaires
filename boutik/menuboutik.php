@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs">
+<ul class="menu">
 <?php
 $self = $_SERVER['PHP_SELF'];
 
@@ -19,6 +19,7 @@ doprint('./admin.html', $self, "Admin boutik");
 doprint('./infos.php', $self, "Infos PHP");
 ?>
 </ul>
-<br />
+<HR>
+<BR />
 </header>
 
