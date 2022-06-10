@@ -85,6 +85,53 @@
   line-height: 15px;
   border-radius: 0px;
 }
+.footer {
+  background-color: white;
+  color: gray;
+  font-size: 12px;
+}
+.footer a{
+}
+.footer p.foot-left{
+  text-align: left;
+}
+.footer p.foot-right{
+  text-align: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*width: 200px;*/
+  text-align:center;
+} 
+li {
+  float: left;
+  display: block;
+} 
+
+li a {
+  display: block;
+  width: 200px;
+  text-align:center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*width: 200px;*/
+  text-align:center;
+} 
+li {
+  float: left;
+  display: block;
+} 
+
+li a {
+  display: block;
+  width: 200px;
+  text-align:center;
+}
 ul {
   list-style-type: none;
   margin: 0;
