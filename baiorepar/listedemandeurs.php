@@ -54,4 +54,6 @@ $sql = 'SELECT nom, email, mobile
 
 <?php mysqli_close($conn); ?>
 
+<?php  require_once("../css/admin.css"); ?>
 <?php require_once("../tail.php"); ?>
+<formulaire-menu/>

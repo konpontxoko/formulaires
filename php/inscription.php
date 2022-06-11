@@ -37,7 +37,7 @@ require_once("../menu.php");
             </div>        
         </div>
     </div>
-.
-<?php
-require_once("../tail.php");
-?>
+
+<?php  require_once("../css/admin.css"); ?>
+<?php require_once("../tail.php"); ?>
+<formulaire-menu/>
