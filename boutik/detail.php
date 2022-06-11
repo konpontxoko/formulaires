@@ -1,14 +1,10 @@
-<?php 
-require_once("../head.php");
-?>
-<h2>Boutik</h2>
-<?php 
-require_once("./menuboutik.php");
-?>
+<?php #require_once("../head.php"); ?>
+<?php #require_once("./menuboutik.php"); ?>
 
 
+<?php require_once("../css/article-details.css"); ?>
 
-    <a class="ArticleDetail-back" href="./index.php">&lt;- Retour à la liste des articles</a>
+    <a class="ArticleDetail-back" href="./pending.html">&lt;- Retour à la liste des articles</a>
     <h1 class="ArticleDetail-title">Aspirateur Rowenta 800W</h1>
       <section class="ArticleDetail-infos">
         <p>Prix : <span class="ArticleDetail-price"/>
@@ -46,37 +42,6 @@ require_once("./menuboutik.php");
     const price = document.getElementsByClassName('ArticleDetail-price')[0];
     price.textContent = 'libre';
   </script>
-  <style>
-    body {
-      display: grid;
-      grid-template-rows: auto auto 50px auto auto;
-      grid-template-columns: 300px 1fr;
-      grid-template-areas: 
-      "back back"
-      "title title"
-      "photo infos"
-      "photo desc"
-      "resa resa";
-    }
-    .ArticleDetail-back {
-      grid-area: back;
-    }
-    .ArticleDetail-title {
-      grid-area: title;
-    }
-    .ArticleDetail-infos {
-      grid-area: infos;
-    }
-    .ArticleDetail-photo {
-      grid-area: photo;
-    }
-    .ArticleDetail-description {
-      grid-area: desc;
-    }
-    .ArticleDetail-reservation {
-      grid-area: resa;
-    }
-  </style>
 <?php
 require_once("../tail.php");
 ?>

@@ -22,16 +22,37 @@ CREATE TABLE db_site.demandeurs (
   UNIQUE (email)
 );
 
--- entités
+-- demandes
 CREATE TABLE db_site.demandes (
   num_demande serial NOT NULL,
-  intitule text NOT NULL,
+  num_objet integer NOT NULL,
   message text NOT NULL,
-  email text ,
-  photo BLOB,
+  email text NOT NULL,
   --  clef
   PRIMARY KEY (num_demande)
---  FOREIGN KEY (email) REFERENCES demandeurs(email)
+  UNIQUE (email)
+  FOREIGN KEY (email) REFERENCES demandeurs.email
+);
+
+
+CREATE TABLE db_site.objets (
+  num_objet integer NOT NULL,
+  num_stock,
+  intitule text NOT NULL,
+  qtite integer DEFAULT 0,
+  photo BLOB,
+  -- clef
+  PRIMARY KEY (num_objet)
+);
+
+CREATE TABLE stocks (
+	num_stock integer NOT NULL,
+	nom text NOT NULL,
+	adresse NOT NULL,
+  	email text NOT NULL,
+  -- clef
+  PRIMARY KEY (num_stock),
+  UNIQUE (email)
 );
 
 

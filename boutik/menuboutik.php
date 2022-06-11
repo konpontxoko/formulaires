@@ -15,8 +15,7 @@ doprint('./archives.html', $self, "Archives");
 doprint('./admin.php', $self, "Admin Boutik");
 doprint('./detail.php', $self, "Details");
 doprint('./samples/events.json', $self, "Contenu BDD");
-doprint('./admin.html', $self, "Admin boutik");
-doprint('./infos.php', $self, "Infos PHP");
+doprint('./admin.php', $self, "Admin boutik");
 ?>
 </ul>
 <HR>
