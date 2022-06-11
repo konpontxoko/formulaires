@@ -1,16 +1,16 @@
 -- injection de la table
-DROP SCHEMA db_site  ;
---SET search_path TO db_site, public;
+DROP SCHEMA db_main  ;
+--SET search_path TO db_main, public;
 
 -- creation table demandeurs
-CREATE SCHEMA db_site;
--- SET search_path TO db_site, public;
+CREATE SCHEMA db_main;
+-- SET search_path TO db_main, public;
 
--- DROP TABLE db_sites.demandeurs;
--- DROP TABLE db_sites.demandes;
+-- DROP TABLE db_mains.demandeurs;
+-- DROP TABLE db_mains.demandes;
 
 -- entités
-CREATE TABLE db_site.demandeurs (
+CREATE TABLE db_main.demandeurs (
   num_demandeur serial NOT NULL,
   nom text NOT NULL,
   prenom text NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE db_site.demandeurs (
 );
 
 -- demandes
-CREATE TABLE db_site.demandes (
+CREATE TABLE db_main.demandes (
   num_demande serial NOT NULL,
   num_objet integer NOT NULL,
   message text NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE db_site.demandes (
 );
 
 
-CREATE TABLE db_site.objets (
+CREATE TABLE db_main.objets (
   num_objet integer NOT NULL,
   num_stock,
   intitule text NOT NULL,
