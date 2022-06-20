@@ -19,7 +19,7 @@
     <li><a href="/boutik/boutik.php">Boutik</a></li>
     <li><a href="http://banka.baiorepar.pizzacoca.fr/">Dolibarr</a></li>
 </ul>
-
+<?php require_once("matomo.php"); ?>
 <header>
 <BR/>
 </header>
