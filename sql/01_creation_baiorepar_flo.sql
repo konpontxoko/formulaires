@@ -26,6 +26,7 @@ CREATE TABLE db_flo.demandeurs (
 CREATE TABLE db_flo.demandes (
   num_demande serial NOT NULL,
   num_objet integer NOT NULL,
+  titre text NOT NULL,
   message text NOT NULL,
   email text NOT NULL,
   --  clef

@@ -13,7 +13,7 @@ require_once("../baiorepar/menubaiorepar.php");
                     <div class="page-header">
                     </div>
                     <p>Demande de réparation</p>
-                    <form action="insert.php" method="post" autocomplete="off">
+                    <form action="/php/insert-demande.php" method="post" autocomplete="off">
                         <div class="register">
                             <label for "nom"><i class="fas fa-heart-broken"></i>  Désignation de l'objet cassé</label>
                             <input type="text" name="designation" placeholder="désignation" id="designation" class="form-control" required>
