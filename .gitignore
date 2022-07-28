@@ -1,6 +1,7 @@
 # Ajouts 
 *.swp
-
+db/*
+*db.php
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,32 @@
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: auto auto 50px auto auto;
+      grid-template-columns: 300px 1fr;
+      grid-template-areas: 
+      "back back"
+      "title title"
+      "photo infos"
+      "photo desc"
+      "resa resa";
+    }
+    .ArticleDetail-back {
+      grid-area: back;
+    }
+    .ArticleDetail-title {
+      grid-area: title;
+    }
+    .ArticleDetail-infos {
+      grid-area: infos;
+    }
+    .ArticleDetail-photo {
+      grid-area: photo;
+    }
+    .ArticleDetail-description {
+      grid-area: desc;
+    }
+    .ArticleDetail-reservation {
+      grid-area: resa;
+    }
+  </style>
+

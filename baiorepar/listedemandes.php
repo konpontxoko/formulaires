@@ -1,17 +1,12 @@
-<html>
-<head>
-  <script src="/js//article-list-item.js"></script>
-  <script src="/js/menu.js"></script>
-  <style type="text/css">
-    body {
-      padding: 50px 10px;
-    }
-  </style>
-  <link href="/css/article-list.css" rel="stylesheet">
-</head>
-<body>
-<h1>Liste des demandes de réparation</h1>
+<?php 
+require_once("../head.php");
+?>
+<h2>Demandes de réparation</h2>
+<?php 
+require_once("./menubaiorepar.php");
+?>
 <div class="ArticleList">
+
 <?php
   $articles = array();
   for ($i = 0; $i < 30; $i++) {
@@ -33,6 +28,6 @@ ELEMENT;
   }
 ?>
 </div>
+<?php  require_once("../css/admin.css"); ?>
+<?php require_once("../tail.php"); ?>
 <formulaire-menu/>
-</body>
-</html>
